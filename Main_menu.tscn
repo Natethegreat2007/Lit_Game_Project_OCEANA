@@ -1,0 +1,115 @@
+[gd_scene load_steps=12 format=3 uid="uid://gc0wel256lrp"]
+
+[ext_resource type="Script" uid="uid://cwg23od2jsy5" path="res://Main_menu.gd" id="1_mr4vb"]
+[ext_resource type="Texture2D" uid="uid://deornfghaettt" path="res://pixel_art___underwater_coral_reef_with_a_mermaid_by_flyforshine_de41vpg-fullview.png" id="2_pfkyu"]
+[ext_resource type="AudioStream" uid="uid://bhrbdro8igapt" path="res://Game Music/Main Menu theme.mp3" id="3_ckb7h"]
+[ext_resource type="AudioStream" uid="uid://dldpdccmcx1a5" path="res://Game Music/Game Music/523762__matrixxx__select-granted-05.wav" id="4_6u6jv"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jejwt"]
+
+[sub_resource type="Theme" id="Theme_57u3i"]
+Panel/styles/panel = SubResource("StyleBoxFlat_jejwt")
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_iqm18"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8ga1s"]
+texture = SubResource("CanvasTexture_iqm18")
+modulate_color = Color(0.129412, 1, 1, 1)
+
+[sub_resource type="FontFile" id="FontFile_5b7cp"]
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/55/0 = Vector2(0, 0)
+cache/0/55/0/ascent = 0.0
+cache/0/55/0/descent = 0.0
+cache/0/55/0/underline_position = 0.0
+cache/0/55/0/underline_thickness = 0.0
+cache/0/55/0/scale = 1.0
+cache/0/55/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/55/0/kerning_overrides/55/0 = Vector2(0, 0)
+
+[sub_resource type="FontVariation" id="FontVariation_dtkr7"]
+base_font = SubResource("FontFile_5b7cp")
+
+[sub_resource type="LabelSettings" id="LabelSettings_g2mt3"]
+font = SubResource("FontVariation_dtkr7")
+font_size = 55
+outline_size = 4
+outline_color = Color(0.121569, 0.121569, 0.121569, 1)
+shadow_size = 0
+shadow_color = Color(0.0705882, 0.0705882, 0.0705882, 0)
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_mr4vb")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 800.0
+offset_top = 620.0
+offset_right = 1125.0
+offset_bottom = 777.0
+text = "Quit"
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 800.0
+offset_top = 376.0
+offset_right = 1201.0
+offset_bottom = 530.0
+theme = SubResource("Theme_57u3i")
+text = "Play"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 434.0
+offset_top = 144.0
+offset_right = 1557.0
+offset_bottom = 231.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_8ga1s")
+text = "Reef Rendezvous: The Adventures of Saylor
+"
+label_settings = SubResource("LabelSettings_g2mt3")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="PixelArtUnderwaterCoralReefWithAMermaidByFlyforshineDe41Vpg-fullview" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(974, 502)
+scale = Vector2(1.51563, 1.38889)
+texture = ExtResource("2_pfkyu")
+
+[node name="Panel" type="Panel" parent="ParallaxBackground/ParallaxLayer"]
+offset_left = 798.0
+offset_top = 374.0
+offset_right = 1200.0
+offset_bottom = 526.0
+
+[node name="Panel2" type="Panel" parent="ParallaxBackground/ParallaxLayer"]
+offset_left = 796.0
+offset_top = 376.0
+offset_right = 1198.0
+offset_bottom = 528.0
+
+[node name="Panel3" type="Panel" parent="ParallaxBackground/ParallaxLayer"]
+offset_left = 796.0
+offset_top = 620.0
+offset_right = 1126.0
+offset_bottom = 776.0
+
+[node name="Panel4" type="Panel" parent="ParallaxBackground/ParallaxLayer"]
+offset_left = 798.0
+offset_top = 626.0
+offset_right = 1128.0
+offset_bottom = 782.0
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_ckb7h")
+
+[node name="UI_Accept" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_6u6jv")
+volume_db = 24.0
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

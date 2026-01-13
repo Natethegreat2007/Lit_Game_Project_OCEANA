@@ -1,0 +1,79 @@
+[gd_scene load_steps=6 format=3 uid="uid://ccql7wpbxyt62"]
+
+[ext_resource type="Script" uid="uid://dq8nomepbi3o5" path="res://mission_end.gd" id="1_yi3ao"]
+[ext_resource type="Texture2D" uid="uid://dyvs2iguf12hq" path="res://1900778_ex-lyd_tropical-sea.png" id="2_rh6kq"]
+[ext_resource type="AudioStream" uid="uid://dldpdccmcx1a5" path="res://Game Music/Game Music/523762__matrixxx__select-granted-05.wav" id="3_sadhf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r6vf7"]
+bg_color = Color(0.717647, 0.447059, 0.972549, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_3oys6"]
+font_size = 28
+outline_size = 4
+outline_color = Color(0.00392157, 0.00392157, 0.00392157, 1)
+
+[node name="Mission" type="Node2D"]
+script = ExtResource("1_yi3ao")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 802.0
+offset_top = 238.0
+offset_right = 1161.0
+offset_bottom = 277.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_r6vf7")
+text = "MISSION ONE COMPLETED"
+label_settings = SubResource("LabelSettings_3oys6")
+
+[node name="Continue Button" type="Button" parent="."]
+offset_left = 825.0
+offset_top = 306.0
+offset_right = 1089.0
+offset_bottom = 347.0
+text = "Click to Continue to Next Level"
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 836.344
+offset_top = 412.0
+offset_right = 1086.34
+offset_bottom = 469.0
+text = "Click to Replay Chapter"
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="1900778Ex-lydTropical-sea" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(986, 566.5)
+scale = Vector2(3.11875, 1.78594)
+texture = ExtResource("2_rh6kq")
+
+[node name="Panel" type="Panel" parent="ParallaxBackground/ParallaxLayer/1900778Ex-lydTropical-sea"]
+offset_left = -48.0962
+offset_top = -85.5616
+offset_right = 31.9038
+offset_bottom = -54.5616
+
+[node name="Panel2" type="Panel" parent="ParallaxBackground/ParallaxLayer/1900778Ex-lydTropical-sea"]
+offset_left = -48.0962
+offset_top = -85.5616
+offset_right = 31.9038
+offset_bottom = -54.5616
+
+[node name="Panel5" type="Panel" parent="ParallaxBackground/ParallaxLayer/1900778Ex-lydTropical-sea"]
+offset_left = -50.5651
+offset_top = -143.206
+offset_right = 32.4349
+offset_bottom = -123.206
+
+[node name="Panel6" type="Panel" parent="ParallaxBackground/ParallaxLayer/1900778Ex-lydTropical-sea"]
+offset_left = -50.5651
+offset_top = -143.206
+offset_right = 32.4349
+offset_bottom = -123.206
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_sadhf")
+volume_db = 3.0
+
+[connection signal="pressed" from="Continue Button" to="." method="_on_continue_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

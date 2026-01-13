@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://bralknui6xmxg"
+path="res://.godot/imported/dead_coral.dialogue-cf53eb89b8ba5d260aa4096f1990a7e6.tres"
+
+[deps]
+
+source_file="res://dialogues/dead_coral.dialogue"
+dest_files=["res://.godot/imported/dead_coral.dialogue-cf53eb89b8ba5d260aa4096f1990a7e6.tres"]
+
+[params]
+
+defaults=true

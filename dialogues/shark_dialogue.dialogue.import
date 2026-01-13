@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://bvorjr1r3gjdd"
+path="res://.godot/imported/shark_dialogue.dialogue-8c3490b2749d44667893be3deacc0d92.tres"
+
+[deps]
+
+source_file="res://dialogues/shark_dialogue.dialogue"
+dest_files=["res://.godot/imported/shark_dialogue.dialogue-8c3490b2749d44667893be3deacc0d92.tres"]
+
+[params]
+
+defaults=true

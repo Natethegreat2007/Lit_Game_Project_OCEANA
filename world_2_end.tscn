@@ -1,0 +1,95 @@
+[gd_scene load_steps=4 format=3 uid="uid://bxg6ojyoqp8t6"]
+
+[ext_resource type="Script" uid="uid://c3dda4laaluiu" path="res://world2_end.gd" id="1_hhdc4"]
+[ext_resource type="Texture2D" uid="uid://dyvs2iguf12hq" path="res://1900778_ex-lyd_tropical-sea.png" id="2_713f4"]
+[ext_resource type="AudioStream" uid="uid://dldpdccmcx1a5" path="res://Game Music/Game Music/523762__matrixxx__select-granted-05.wav" id="3_57oap"]
+
+[node name="world2_end" type="Node2D"]
+script = ExtResource("1_hhdc4")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 804.0
+offset_top = 170.0
+offset_right = 993.0
+offset_bottom = 193.0
+text = "MISSION 2 COMPLETED!!"
+
+[node name="Button" type="Button" parent="."]
+offset_left = 811.0
+offset_top = 220.0
+offset_right = 982.0
+offset_bottom = 275.0
+text = "Continue to World 3"
+
+[node name="Retry" type="Button" parent="."]
+offset_left = 814.0
+offset_top = 329.0
+offset_right = 995.0
+offset_bottom = 409.0
+text = "Retry Mission"
+
+[node name="Button3" type="Button" parent="."]
+offset_left = 810.0
+offset_top = 456.0
+offset_right = 1006.0
+offset_bottom = 517.0
+text = "Replay World 1
+"
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="1900778Ex-lydTropical-sea" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(999.5, 522.5)
+scale = Vector2(3.12656, 1.62656)
+texture = ExtResource("2_713f4")
+
+[node name="Panel3" type="Panel" parent="ParallaxBackground/ParallaxLayer/1900778Ex-lydTropical-sea"]
+offset_left = -62.0
+offset_top = -41.0
+offset_right = 3.0
+offset_bottom = -3.0
+
+[node name="Panel4" type="Panel" parent="ParallaxBackground/ParallaxLayer/1900778Ex-lydTropical-sea"]
+offset_left = -62.0
+offset_top = -41.0
+offset_right = 3.0
+offset_bottom = -3.0
+
+[node name="Panel5" type="Panel" parent="ParallaxBackground/ParallaxLayer/1900778Ex-lydTropical-sea"]
+offset_left = -60.0
+offset_top = -120.0
+offset_right = -2.0
+offset_bottom = -72.0
+
+[node name="Panel6" type="Panel" parent="ParallaxBackground/ParallaxLayer/1900778Ex-lydTropical-sea"]
+offset_left = -60.0
+offset_top = -120.0
+offset_right = -2.0
+offset_bottom = -72.0
+
+[node name="Panel7" type="Panel" parent="ParallaxBackground/ParallaxLayer/1900778Ex-lydTropical-sea"]
+offset_left = -60.0
+offset_top = -188.0
+offset_right = -5.0
+offset_bottom = -152.0
+
+[node name="Panel8" type="Panel" parent="ParallaxBackground/ParallaxLayer/1900778Ex-lydTropical-sea"]
+offset_left = -60.0
+offset_top = -188.0
+offset_right = -5.0
+offset_bottom = -152.0
+
+[node name="Panel9" type="Panel" parent="ParallaxBackground/ParallaxLayer/1900778Ex-lydTropical-sea"]
+offset_left = -63.0
+offset_top = -231.0
+offset_right = 1.0
+offset_bottom = -195.0
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_57oap")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Retry" to="." method="_on_retry_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]

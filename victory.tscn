@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cxvqj6hvtnica"]
+
+[node name="Victory" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+offset_left = 313.0
+offset_top = 141.0
+offset_right = 682.0
+offset_bottom = 268.0
+text = "YAY, YOU WON
+
+This is the end of the Beta Session...Thank you
+for playing the test version of my game!
+I hope you will look forward to its full release ^^"

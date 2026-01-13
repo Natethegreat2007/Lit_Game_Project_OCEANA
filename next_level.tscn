@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://4nvhmlvsxkec"]
+
+[ext_resource type="Script" uid="uid://o4f2x5njn2kh" path="res://next_level.gd" id="1_cak65"]
+
+[sub_resource type="Resource" id="Resource_1m5ts"]
+metadata/__load_path__ = "res://Marine Asssets/game-assets-rapidpunches-FEB2021/png-sprites/16bit-grass-turtle2.png"
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_tl12i"]
+radius = 48.0104
+
+[node name="NextLevel" type="Area2D"]
+script = ExtResource("1_cak65")
+
+[node name="16Bit-grass-turtle2" type="Sprite2D" parent="."]
+position = Vector2(1, 20)
+scale = Vector2(4.75, 4)
+texture = SubResource("Resource_1m5ts")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 19)
+shape = SubResource("CircleShape2D_tl12i")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://coaxg17fxj2i4"
+path="res://.godot/imported/July - John Patitucci.mp3-949c01ef106d4d52ca86094d83bb428d.mp3str"
+
+[deps]
+
+source_file="res://Game Music/July - John Patitucci.mp3"
+dest_files=["res://.godot/imported/July - John Patitucci.mp3-949c01ef106d4d52ca86094d83bb428d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

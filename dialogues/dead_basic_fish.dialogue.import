@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://dabvg83gcqcnk"
+path="res://.godot/imported/dead_basic_fish.dialogue-041fcca64c1443b5010657a8e3412c8b.tres"
+
+[deps]
+
+source_file="res://dialogues/dead_basic_fish.dialogue"
+dest_files=["res://.godot/imported/dead_basic_fish.dialogue-041fcca64c1443b5010657a8e3412c8b.tres"]
+
+[params]
+
+defaults=true

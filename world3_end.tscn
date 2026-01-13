@@ -1,0 +1,77 @@
+[gd_scene load_steps=9 format=3 uid="uid://hfbo8lmry536"]
+
+[ext_resource type="Script" uid="uid://6pbjl2k8ia50" path="res://world3_end.gd" id="1_dyxkk"]
+[ext_resource type="Texture2D" uid="uid://dyvs2iguf12hq" path="res://1900778_ex-lyd_tropical-sea.png" id="2_pet2p"]
+[ext_resource type="AudioStream" uid="uid://dldpdccmcx1a5" path="res://Game Music/Game Music/523762__matrixxx__select-granted-05.wav" id="3_ogdmg"]
+
+[sub_resource type="Theme" id="Theme_fe26l"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8r8fx"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_c8vfd"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dufju"]
+
+[sub_resource type="Theme" id="Theme_f7ak6"]
+/styles/World3 = SubResource("StyleBoxTexture_dufju")
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_dyxkk")
+
+[node name="Label" type="Label" parent="."]
+modulate = Color(0.815686, 1, 1, 1)
+offset_left = 892.0
+offset_top = 85.0
+offset_right = 1027.0
+offset_bottom = 108.0
+theme = SubResource("Theme_fe26l")
+theme_type_variation = &"HeaderLarge"
+theme_override_styles/normal = SubResource("StyleBoxFlat_8r8fx")
+text = "END OF WORLD 3"
+label_settings = SubResource("LabelSettings_c8vfd")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 859.0
+offset_top = 159.0
+offset_right = 1063.0
+offset_bottom = 215.0
+text = "Continue to Final Mission"
+
+[node name="Button3" type="Button" parent="."]
+offset_left = 867.0
+offset_top = 273.0
+offset_right = 1051.0
+offset_bottom = 325.0
+text = "Replay World 1"
+
+[node name="Button4" type="Button" parent="."]
+offset_left = 852.0
+offset_top = 379.0
+offset_right = 1051.0
+offset_bottom = 425.0
+text = "Replay World 2"
+
+[node name="Button5" type="Button" parent="."]
+offset_left = 854.0
+offset_top = 476.0
+offset_right = 1054.0
+offset_bottom = 529.0
+theme = SubResource("Theme_f7ak6")
+text = "Replay World 3"
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="1900778Ex-lydTropical-sea" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(1009, 582)
+scale = Vector2(3.15313, 1.82187)
+texture = ExtResource("2_pet2p")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_ogdmg")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="Button5" to="." method="_on_button_5_pressed"]

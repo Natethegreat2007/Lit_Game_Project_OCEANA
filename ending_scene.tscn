@@ -1,0 +1,69 @@
+[gd_scene load_steps=11 format=3 uid="uid://ce7lx3g3b1r6n"]
+
+[ext_resource type="Texture2D" uid="uid://txxha2gxtmsg" path="res://ship_ffv.png" id="1_55wnp"]
+[ext_resource type="Script" uid="uid://bmf8hhupvpd8o" path="res://ending_scene.gd" id="1_s1j5v"]
+[ext_resource type="Texture2D" uid="uid://c2x1pl8hdudgo" path="res://Untitled1027_20240313223518.png" id="2_w6ayt"]
+[ext_resource type="Script" uid="uid://doafr0xu1w17r" path="res://Saylor_end.gd" id="4_4yhnd"]
+[ext_resource type="PackedScene" uid="uid://jm5ylboblxy3" path="res://actionable.tscn" id="5_vnpa2"]
+[ext_resource type="Resource" uid="uid://rf2h22mso3t2" path="res://dialogues/final_scene.dialogue" id="6_6ttin"]
+[ext_resource type="AudioStream" uid="uid://dkkxtaxckdtvw" path="res://Game Music/sad-violin-150146.mp3" id="9_u3oy5"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bq1oo"]
+radius = 4999.56
+
+[sub_resource type="Resource" id="Resource_uwk52"]
+metadata/__load_path__ = "res://Marine Asssets/game-assets-rapidpunches-FEB2021/png-sprites/regular-stuart-0.png"
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_n6fej"]
+radius = 735.082
+
+[node name="Final Scene" type="Node2D"]
+script = ExtResource("1_s1j5v")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="ShipFfv" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(1426.5, 947)
+scale = Vector2(11.8875, 11.825)
+texture = ExtResource("1_55wnp")
+
+[node name="Saylor" type="Sprite2D" parent="."]
+position = Vector2(560.75, 675.625)
+scale = Vector2(0.0910645, 0.0943603)
+texture = ExtResource("2_w6ayt")
+script = ExtResource("4_4yhnd")
+
+[node name="ActionableFinder" type="Area2D" parent="Saylor"]
+collision_layer = 0
+collision_mask = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Saylor/ActionableFinder"]
+shape = SubResource("CircleShape2D_bq1oo")
+
+[node name="Regular-stuart-0" type="Sprite2D" parent="."]
+position = Vector2(1265, 659)
+scale = Vector2(32.125, 15.125)
+texture = SubResource("Resource_uwk52")
+
+[node name="Actionable" parent="Regular-stuart-0" instance=ExtResource("5_vnpa2")]
+position = Vector2(-41.7207, -33.2537)
+scale = Vector2(0.0301887, 0.0597015)
+dialogue_resources = ExtResource("6_6ttin")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Regular-stuart-0/Actionable"]
+position = Vector2(1391, 561)
+shape = SubResource("CircleShape2D_n6fej")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_u3oy5")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 17.0
+offset_top = 28.0
+offset_right = 489.0
+offset_bottom = 180.0
+text = "CLICK THIS BUTTON after the Dialogue is complete"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -1,0 +1,7 @@
+~ start
+
+Saylor: I received a pearl! 
+Saylor: Time to return to Crab to tell him that I found one...
+set Clam.got_clam = true
+
+=> END

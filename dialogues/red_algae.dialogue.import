@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://c4u8um6cfhnyq"
+path="res://.godot/imported/red_algae.dialogue-62933b3196e0cede16665b1a88e49fae.tres"
+
+[deps]
+
+source_file="res://dialogues/red_algae.dialogue"
+dest_files=["res://.godot/imported/red_algae.dialogue-62933b3196e0cede16665b1a88e49fae.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://bsnbsf5tdwpxb"
+path="res://.godot/imported/coral_info.dialogue-ab617fcd0b072b540afa6100da36d293.tres"
+
+[deps]
+
+source_file="res://dialogues/coral_info.dialogue"
+dest_files=["res://.godot/imported/coral_info.dialogue-ab617fcd0b072b540afa6100da36d293.tres"]
+
+[params]
+
+defaults=true

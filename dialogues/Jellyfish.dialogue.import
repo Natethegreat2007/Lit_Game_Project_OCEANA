@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://dkmhdtd1tj8vq"
+path="res://.godot/imported/Jellyfish.dialogue-4155bcddc651b0b43502eb0ed10c926b.tres"
+
+[deps]
+
+source_file="res://dialogues/Jellyfish.dialogue"
+dest_files=["res://.godot/imported/Jellyfish.dialogue-4155bcddc651b0b43502eb0ed10c926b.tres"]
+
+[params]
+
+defaults=true

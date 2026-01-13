@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://bx23g6devcwg5"]
+
+[ext_resource type="Script" uid="uid://bcn3lssk3qu8c" path="res://paperr_obstacle.gd" id="1_echof"]
+[ext_resource type="Texture2D" uid="uid://ch0oqswiq4qh" path="res://Marine Asssets/crumpled paper 2.png" id="1_vnyar"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1eicq"]
+size = Vector2(32, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5wdki"]
+size = Vector2(31, 20)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_r4ptq"]
+radius = 31.1448
+
+[node name="Paper" type="CharacterBody2D"]
+script = ExtResource("1_echof")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.75, 0)
+shape = SubResource("RectangleShape2D_1eicq")
+
+[node name="CrumpledPaper2" type="Sprite2D" parent="."]
+position = Vector2(3.75, 1)
+scale = Vector2(4.16667, -5)
+texture = ExtResource("1_vnyar")
+
+[node name="Player_Collision" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player_Collision"]
+position = Vector2(2.5, 1)
+shape = SubResource("RectangleShape2D_5wdki")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="Colision" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, 1)
+shape = SubResource("CircleShape2D_r4ptq")
+
+[connection signal="body_entered" from="Player_Collision" to="." method="_on_player_collision_body_entered"]
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

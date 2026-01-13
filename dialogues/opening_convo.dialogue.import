@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://ddy5x58sh2ffr"
+path="res://.godot/imported/opening_convo.dialogue-0ed5ecb05294b4126e6416f28432845e.tres"
+
+[deps]
+
+source_file="res://dialogues/opening_convo.dialogue"
+dest_files=["res://.godot/imported/opening_convo.dialogue-0ed5ecb05294b4126e6416f28432845e.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://dbr7idj4yk0u8"
+path="res://.godot/imported/clownfish.dialogue-cb852a6059b1bf4857f0b6109822e317.tres"
+
+[deps]
+
+source_file="res://dialogues/clownfish.dialogue"
+dest_files=["res://.godot/imported/clownfish.dialogue-cb852a6059b1bf4857f0b6109822e317.tres"]
+
+[params]
+
+defaults=true

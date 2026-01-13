@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://blybxiynjdjpg"
+path="res://.godot/imported/crab dialogue.dialogue-db3ba07349b73f3566bd042f15910f65.tres"
+
+[deps]
+
+source_file="res://crab dialogue.dialogue"
+dest_files=["res://.godot/imported/crab dialogue.dialogue-db3ba07349b73f3566bd042f15910f65.tres"]
+
+[params]
+
+defaults=true

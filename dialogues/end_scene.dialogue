@@ -1,0 +1,23 @@
+~ start
+
+Saylor: Don't you see you're hurting them?
+Aziel: Not this again Saylor...
+Saylor: You have no right to hurt their homes!
+Aziel: Lower your tone Saylor...
+Saylor: How would you feel if you had your home attacked by random trash?
+Aziel: ENOUGH!
+Aziel: They are just fish!
+Aziel: The reef and water willl be fine...as long as we don't poison it.
+Saylor: Dad...the fish in the Blue Hole will start dying...
+Aziel: I do no think so!
+Saylor: LISTEN TO ME DAD!
+Aziel: THAT IS ENOUGH SAYLOR!!
+Aziel: I AM YOUR FATHER!!
+Aziel: Do NOT raise your voice at me child!
+Aziel: Or so help me, I will punish you accordingly...
+Saylor: You never understand...
+Aziel: If that's how you are gonna be......
+Aziel: Fine...
+
+do BeforeBattle.start_battle()
+=> END

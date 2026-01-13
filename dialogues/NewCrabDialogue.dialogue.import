@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://c4yjt1q0ynij4"
+path="res://.godot/imported/NewCrabDialogue.dialogue-429a9c5e8866d5d47db1cc741f390527.tres"
+
+[deps]
+
+source_file="res://dialogues/NewCrabDialogue.dialogue"
+dest_files=["res://.godot/imported/NewCrabDialogue.dialogue-429a9c5e8866d5d47db1cc741f390527.tres"]
+
+[params]
+
+defaults=true

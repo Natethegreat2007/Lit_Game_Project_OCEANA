@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://8m7s1i73sw60"
+path="res://.godot/imported/seahorse.dialogue-4cfe436e0e0ba17b303f4e22a269c782.tres"
+
+[deps]
+
+source_file="res://dialogues/seahorse.dialogue"
+dest_files=["res://.godot/imported/seahorse.dialogue-4cfe436e0e0ba17b303f4e22a269c782.tres"]
+
+[params]
+
+defaults=true

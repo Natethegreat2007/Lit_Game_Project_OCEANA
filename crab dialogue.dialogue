@@ -1,0 +1,36 @@
+~ start
+
+if Clam.got_clam:
+	set Clam.got_clam = true
+	Red Crab: What?! You already have the pearl?
+	Red Crab: Fantastic!! I will open up the path for you!
+	Red Crab: But first....as promised...I will reveal to you the culprits of these attacks
+	Red Crab: Humans...despicable, merciless, tall creatures have been in charge of these seas lately.
+	Red Crab: They throw something called "garbage" within these waters....
+	Red Crab: Sadly, many fish think that this garbage is food and end up nibbling it until their untimely end..
+	Red Crab: Garbage threatens our corals...reefs...and our fellow marine brothers and sisters.
+	Red Crab: Don't get me stared on the oil and temperature changes as of late...
+	Red Crab: That is the truth...humans are damaging our reefs...but they need to learn to respect and preserve us...
+	Red Crab: Anyways, I have a bad feeling...garbage has been falling down even in the Blue Hole.
+	Red Crab: I advise you to find refuge to protect yourself from harm.
+	Red Crab: Swim through the seaweed above me when you are ready to find refuge.
+	Red Crab: I can tell that some of the humans are right above us....
+	Red Crab: Make haste!
+	do World3.next_level_3()
+	=> END
+#Fix the dialogue and how Crab is not saying something else
+else:
+	Red Crab: Hello, Saylor. It isn't everyday we see a pink parrotfish here in the Great Blue Hole.
+	Red Crab: What brings you over here?
+
+	- Trying to find the perpetrators of the marine pollution
+		Red Crab: Ohhh....I see there...well, the answer shouldn't suprise you...
+		Red Crab: Before I reveal the answer though, why not do a task for me?
+		Red Crab: Deliver a pearl to me and I will inform you of what's been going...
+		Red Crab: The origins of the transparent weird food, the reason behind the pale corals and everything!
+		Red Crab: Ask the fish around here for help to find the pearl...I am sure they'll know.
+	
+		Red Crab: Sorry...I can't tell you
+		Red Crab: Ask the other sea creatures you meet maybe they'll kow something
+
+=> END

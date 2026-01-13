@@ -1,0 +1,17 @@
+~ start
+
+Blue Parrotfish: These corals are how we survive...we rely on corals for breeding, nutrition and shelter...
+Blue ParrotFish: What would happen to us if more of our corals get destroyed I wonder...
+- Tell him about the pollution
+	Blue Parrotfish: WHAT?! 0_0
+	Blue Parrotfish: No....I would have never thought that we here at Hol Chan would get affected by the weird food...
+	Blue Parrotfish: Mary the Nurse Shark and Manny the Ray told me they ate piece of a chewy, clear plant that fell from the sky..
+	Blue Parrotfish: Thinking about it now...Mary and Manny haven't visited me in the past 2 days since they told me...
+	Blue Parrotfish: I wonder...where are they now...
+	=> END!
+	
+- Say Farewell
+	Blue Parrotfish: Take care!
+	=> END!
+	
+=> END

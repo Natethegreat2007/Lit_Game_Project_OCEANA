@@ -1,0 +1,97 @@
+[gd_scene load_steps=13 format=3 uid="uid://b77k4mt4xh730"]
+
+[ext_resource type="Script" uid="uid://bgtaqo3aaklw3" path="res://background1.gd" id="1_flvlq"]
+[ext_resource type="Texture2D" uid="uid://cgkmm1r46akhk" path="res://Marine Asssets/fundo do mar back.png" id="2_r1j1q"]
+
+[sub_resource type="Resource" id="Resource_bgais"]
+metadata/__load_path__ = "res://Marine Asssets/game-assets-rapidpunches-FEB2021/tiles/16bit-decorative-coral-DB16-1.png"
+
+[sub_resource type="Resource" id="Resource_dgln5"]
+metadata/__load_path__ = "res://Marine Asssets/game-assets-rapidpunches-FEB2021/tiles/16bit-decorative-coral-DB16-1.png"
+
+[sub_resource type="Resource" id="Resource_mok5t"]
+metadata/__load_path__ = "res://Marine Asssets/game-assets-rapidpunches-FEB2021/tiles/16bit-decorative-coral-DB16-1.png"
+
+[sub_resource type="Resource" id="Resource_lqq8q"]
+metadata/__load_path__ = "res://Marine Asssets/game-assets-rapidpunches-FEB2021/tiles/16bit-decorative-coral-DB16-1.png"
+
+[sub_resource type="Resource" id="Resource_tq3hu"]
+metadata/__load_path__ = "res://Marine Asssets/game-assets-rapidpunches-FEB2021/tiles/16bit-decorative-coral-DB16-1.png"
+
+[sub_resource type="Resource" id="Resource_mlgjp"]
+metadata/__load_path__ = "res://Marine Asssets/game-assets-rapidpunches-FEB2021/tiles/16bit-decorative-coral-DB16-1.png"
+
+[sub_resource type="Resource" id="Resource_nm7ge"]
+metadata/__load_path__ = "res://Marine Asssets/game-assets-rapidpunches-FEB2021/tiles/16bit-decorative-coral-DB16-1.png"
+
+[sub_resource type="Resource" id="Resource_03x4a"]
+metadata/__load_path__ = "res://Marine Asssets/game-assets-rapidpunches-FEB2021/tiles/16bit-decorative-coral-DB16-1.png"
+
+[sub_resource type="Resource" id="Resource_a8m0f"]
+metadata/__load_path__ = "res://Marine Asssets/game-assets-rapidpunches-FEB2021/tiles/16bit-decorative-coral-DB16-1.png"
+
+[sub_resource type="Resource" id="Resource_tv3x5"]
+metadata/__load_path__ = "res://Marine Asssets/game-assets-rapidpunches-FEB2021/tiles/16bit-decorative-coral-DB16-1.png"
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+script = ExtResource("1_flvlq")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+scale = Vector2(0.266955, 0.579362)
+
+[node name="FundoDoMarBack" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(5630.17, 407.345)
+scale = Vector2(44.0149, 9.96251)
+texture = ExtResource("2_r1j1q")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+
+[node name="16Bit-decorative-coral-db16-1" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(889, 612)
+scale = Vector2(4.5, 4.375)
+texture = SubResource("Resource_bgais")
+
+[node name="16Bit-decorative-coral-db16-10" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(889, 612)
+scale = Vector2(4.5, 4.375)
+texture = SubResource("Resource_dgln5")
+
+[node name="16Bit-decorative-coral-db16-7" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(2197, 612)
+scale = Vector2(4.5, 4.375)
+texture = SubResource("Resource_mok5t")
+
+[node name="16Bit-decorative-coral-db16-9" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(1439, 608)
+scale = Vector2(4.5, 4.375)
+texture = SubResource("Resource_lqq8q")
+
+[node name="16Bit-decorative-coral-db16-6" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(1645, 610)
+scale = Vector2(4.5, 4.375)
+texture = SubResource("Resource_tq3hu")
+
+[node name="16Bit-decorative-coral-db16-8" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(1817, 606)
+scale = Vector2(4.5, 4.375)
+texture = SubResource("Resource_mlgjp")
+
+[node name="16Bit-decorative-coral-db16-2" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(1085, 610)
+scale = Vector2(4.5, 4.375)
+texture = SubResource("Resource_nm7ge")
+
+[node name="16Bit-decorative-coral-db16-3" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(1257, 610)
+scale = Vector2(4.5, 4.375)
+texture = SubResource("Resource_03x4a")
+
+[node name="16Bit-decorative-coral-db16-4" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(477, 608)
+scale = Vector2(4.5, 4.375)
+texture = SubResource("Resource_a8m0f")
+
+[node name="16Bit-decorative-coral-db16-5" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(663, 622)
+scale = Vector2(4.5, 4.375)
+texture = SubResource("Resource_tv3x5")

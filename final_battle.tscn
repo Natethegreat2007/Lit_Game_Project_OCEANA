@@ -1,0 +1,128 @@
+[gd_scene load_steps=7 format=3 uid="uid://dgxpxngddv0d0"]
+
+[ext_resource type="Script" uid="uid://cq7tfnxmtlwwy" path="res://final_battle.gd" id="1_2svd6"]
+[ext_resource type="Texture2D" uid="uid://txxha2gxtmsg" path="res://ship_ffv.png" id="1_6uig0"]
+[ext_resource type="PackedScene" uid="uid://b1dnfcghg24qf" path="res://enemy_group.tscn" id="1_tbdah"]
+[ext_resource type="PackedScene" uid="uid://c7l6t1eogadll" path="res://Saylorbattle.tscn" id="3_633pp"]
+[ext_resource type="AudioStream" uid="uid://cskvbv1gfkn47" path="res://Game Music/Zoinks Scoob - R.LUM.R.mp3" id="5_ywsd2"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_1lmap"]
+
+[node name="Final_Battle" type="Node2D"]
+script = ExtResource("1_2svd6")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 1.0
+offset_top = -1.0
+offset_right = 2056.0
+offset_bottom = 1159.0
+texture = ExtResource("1_6uig0")
+expand_mode = 1
+
+[node name="Panel" type="Panel" parent="TextureRect"]
+layout_mode = 0
+offset_left = 184.0
+offset_top = 595.0
+offset_right = 574.0
+offset_bottom = 732.0
+
+[node name="Panel2" type="Panel" parent="TextureRect"]
+layout_mode = 0
+offset_left = 184.0
+offset_top = 595.0
+offset_right = 574.0
+offset_bottom = 732.0
+
+[node name="Panel3" type="Panel" parent="TextureRect"]
+layout_mode = 0
+offset_left = 184.0
+offset_top = 595.0
+offset_right = 574.0
+offset_bottom = 732.0
+
+[node name="RemainingActionsLabel" type="Label" parent="."]
+offset_left = 185.0
+offset_top = 593.0
+offset_right = 569.0
+offset_bottom = 720.0
+text = "The Player ONLY has 3 attacks per Turn!
+Select up to 3 enemies to attack, heal and defend!
+Attack: Does Damage to the enemy
+Heal: Absorbs HP from selected enemie(s)
+Defend: Counters a tiny bit of damage"
+label_settings = SubResource("LabelSettings_1lmap")
+
+[node name="Panel4" type="Panel" parent="."]
+offset_left = 179.0
+offset_top = 502.0
+offset_right = 577.0
+offset_bottom = 588.0
+
+[node name="Panel5" type="Panel" parent="."]
+offset_left = 179.0
+offset_top = 502.0
+offset_right = 580.0
+offset_bottom = 588.0
+
+[node name="Panel6" type="Panel" parent="."]
+offset_left = 179.0
+offset_top = 502.0
+offset_right = 561.0
+offset_bottom = 588.0
+
+[node name="RemainingActionsLabel2" type="Label" parent="."]
+offset_left = 180.0
+offset_top = 500.0
+offset_right = 564.0
+offset_bottom = 587.0
+text = "Use the UP & DOWN directional keys to
+ select an action and to select an enemy 
+(Even if you cannot see the pointer on the enemy"
+label_settings = SubResource("LabelSettings_1lmap")
+
+[node name="Enemy_group" parent="." instance=ExtResource("1_tbdah")]
+position = Vector2(1283, 352)
+
+[node name="Saylor_battle_sprite" parent="." instance=ExtResource("3_633pp")]
+position = Vector2(679, 587)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Choice" type="VBoxContainer" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -32.5
+offset_top = -50.5
+offset_right = 32.5
+offset_bottom = 50.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 4
+
+[node name="Actions" type="VBoxContainer" parent="CanvasLayer/Choice"]
+layout_mode = 2
+
+[node name="Attack" type="Button" parent="CanvasLayer/Choice/Actions"]
+layout_mode = 2
+text = "Attack"
+
+[node name="Heal" type="Button" parent="CanvasLayer/Choice/Actions"]
+layout_mode = 2
+text = "Heal"
+
+[node name="Defend" type="Button" parent="CanvasLayer/Choice/Actions"]
+layout_mode = 2
+text = "Defend"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_ywsd2")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(944, 568)
+
+[connection signal="pressed" from="CanvasLayer/Choice/Actions/Attack" to="Enemy_group" method="_on_attack_pressed"]
+[connection signal="pressed" from="CanvasLayer/Choice/Actions/Heal" to="Enemy_group" method="_on_heal_pressed"]
+[connection signal="pressed" from="CanvasLayer/Choice/Actions/Defend" to="Enemy_group" method="_on_defend_pressed"]

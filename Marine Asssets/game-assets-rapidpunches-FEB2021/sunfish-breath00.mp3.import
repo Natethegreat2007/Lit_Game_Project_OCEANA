@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bqot5nxbj7gj7"
+path="res://.godot/imported/sunfish-breath00.mp3-bb57955e382380a05ba67bf82fe62656.mp3str"
+
+[deps]
+
+source_file="res://Marine Asssets/game-assets-rapidpunches-FEB2021/sunfish-breath00.mp3"
+dest_files=["res://.godot/imported/sunfish-breath00.mp3-bb57955e382380a05ba67bf82fe62656.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
